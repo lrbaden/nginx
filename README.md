@@ -13,7 +13,7 @@ docker build --rm -t my_nginx .
 docker build --rm -t my_nginx https://github.com/lrbaden/nginx.git#main
 
 # run container
-docker run --rm -it -name nginx_ctnr -p 80:80 --mount "type=bind,src=/some/path/,dst=/mnt/some/path" my_nginx 
+docker run --rm -it --name nginx_ctnr -p 80:80 --mount "type=bind,src=/some/path/,dst=/mnt/some/path" my_nginx 
 ```
 ### Using compose file
 
